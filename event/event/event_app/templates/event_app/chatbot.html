@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chatbot</title>
+    </head>
+    <body>
+        <h1>
+            Chatbot reg will be here
+        </h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">submit</button>    
+        </form>
+
+        <a href="{% url 'home' %}">
+            <button>Go back to home</button>
+        </a>
+        
+    </body>
+</html>

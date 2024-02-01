@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>idea-gen</title>
+    </head>
+    <body>
+        <h1>
+            Idea-gen reg will be here 
+        </h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">submit</button>    
+        </form>
+
+        <a href="{% url 'home' %}">
+            <button>Go back to home</button>
+        </a>
+    </body>
+</html>
